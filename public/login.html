@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Login Page</title>
+    <title>Login</title>
     <!-- Bootstrap CSS -->
     <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -21,64 +21,37 @@
           <span class="sr-only">Toggle navigation</span>
           Menu <i class="fa fa-bars"></i>
           </button>
-          <a class="navbar-brand" href="index.ejs">Gl<i class="em em-globe_with_meridians"></i></i>beTrotter</a>
+          <a class="navbar-brand" href="/">Gl<i class="em em-globe_with_meridians"></i></i>beTrotter</a>
         </div>
       </div>
     </nav>
-    <form class="form-horizontal">
+    <form class="form-horizontal" method="POST" action="/login">
       <fieldset>
-
         <!-- Form Name -->
-        <legend>Create New Account</legend>
-
-        <!-- Name input-->
+        <legend>User Login</legend>
+        <!-- Text input-->
         <div class="form-group">
-          <label class="col-md-4 control-label" for="nameInput">Name</label>
+          <label class="col-md-4 control-label" for="emailInput">Login</label>
           <div class="col-md-4">
-            <input id="nameInput" name="nameInput" type="text" placeholder="First &amp; Last" class="form-control input-md" required="">
+            <input id="emailInput" name="emailInput" type="text" placeholder="example@example.com" class="form-control input-md" required="">
+            
           </div>
         </div>
-
-        <!-- Blog Title input-->
-        <div class="form-group">
-          <label class="col-md-4 control-label" for="nameInput">Your Blog Title</label>
-          <div class="col-md-4">
-            <input id="nameInput" name="titleInput" type="text" placeholder="ex: My Travel Journal" class="form-control input-md" required="">
-          </div>
-        </div>
-
-        <!-- Quote input-->
-        <div class="form-group">
-          <label class="col-md-4 control-label" for="nameInput">Favorite Travel Quote</label>
-          <div class="col-md-4">
-            <input id="nameInput" name="quoteInput" type="text" placeholder="Something that inspires you..." class="form-control input-md" required="">
-          </div>
-        </div>
-
-        <!-- Email input-->
-        <div class="form-group">
-          <label class="col-md-4 control-label" for="emailInput">E-mail</label>
-          <div class="col-md-4">
-            <input id="emailInput" name="emailInput" type="email" placeholder="example@example.com" class="form-control input-md" required="">
-          </div>
-        </div>
-
         <!-- Password input-->
         <div class="form-group">
           <label class="col-md-4 control-label" for="passwordInput">Password Input</label>
           <div class="col-md-4">
-            <input id="passwordInput" name="passwordInput" type="password" placeholder="At least 6 characters" class="form-control input-md" required="">
+            <input id="passwordInput" name="passwordInput" type="password" placeholder="at least 6 characters" class="form-control input-md" required="">
+            
           </div>
         </div>
-
-        <!-- Submit Button -->
+        <!-- Button -->
         <div class="form-group">
           <label class="col-md-4 control-label" for="submitButton"></label>
           <div class="col-md-4">
             <button id="submitButton" name="submitButton" class="btn btn-success">Submit</button>
           </div>
         </div>
-
       </fieldset>
     </form>
   </body>

@@ -70,7 +70,7 @@ hr.small {
   }
   .navbar-custom .navbar-brand:hover,
   .navbar-custom .navbar-brand:focus {
-    color: rgba(255, 255, 255, 0.8);
+    color: #0085A1;
   }
   .navbar-custom .nav li a {
     color: white;
@@ -78,7 +78,7 @@ hr.small {
   }
   .navbar-custom .nav li a:hover,
   .navbar-custom .nav li a:focus {
-    color: rgba(255, 255, 255, 0.8);
+    color: #0085A1;
   }
 }
 @media only screen and (min-width: 1170px) {
@@ -389,5 +389,19 @@ legend {
   font-weight: bold;
   font-size: 30px;
   background-color: rgba(88, 149, 209, .5);
-
+}
+#floating-panel {
+/*  position: absolute;*/
+  top: 10px;
+  left: 40%;
+  z-index: 5;
+  background-color: #fff;
+  padding: 5px;
+  text-align: center;
+  font-family: 'Roboto','sans-serif';
+  line-height: 30px;
+  padding-left: 10px;
+}
+h4 {
+  text-align: center;
 }
